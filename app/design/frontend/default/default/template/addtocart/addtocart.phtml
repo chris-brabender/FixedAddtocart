@@ -1,0 +1,38 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Snipperman
+ * Date: 24/12/13
+ * Time: 7:13 PM
+ */
+?>
+
+<?php
+if(Mage::getStoreConfig('brabs/addtocart/active')): ?>
+
+<div class="addtocart">
+	<?php
+		$_product = Mage::registry('current_product');
+		$product_name = $_product->getName();
+		echo "<h2>" . $product_name . "</h2>";
+
+	?>
+	<div class="add-to-box">
+		<?php if($_product->isSaleable()): ?>
+			<?php echo $this->getChildHtml('addtocart') ?>
+		<?php endif; ?>
+	</div>
+	<?php echo $this->getChildHtml('price') ?>
+</div>
+
+<script type="text/javascript">
+	var $j = jQuery.noConflict();
+
+	$j(document).ready(function(){
+		$j('.addtocart').waypoint('sticky', {
+			stuckClass: 'stuck'
+		});
+	});
+</script>
+
+<?php endif; ?>

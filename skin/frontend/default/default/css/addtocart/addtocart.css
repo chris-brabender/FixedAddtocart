@@ -1,0 +1,41 @@
+.sticky-wrapper .addtocart {
+	display:none;
+	top: 50px;
+	-webkit-transition: all 0.5s;
+	position: fixed;
+
+	padding: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: fixed;
+	height: 25px;
+	background: #fff;
+	box-shadow: 0px 0px 4px #ccc;
+}
+
+.sticky-wrapper .addtocart.stuck:hover {
+	top: -45px;
+}
+
+.sticky-wrapper .addtocart.stuck {
+	display:block;
+}
+
+.addtocart .add-to-box {
+	display: inline;
+	float: right;
+	margin-right: 20px;
+	margin: 2px 20px 0px 0px;
+}
+
+.addtocart h2 {
+	display: inline;
+	float: left;
+}
+
+.addtocart .price-box {
+	display: inline-block;
+	float: right;
+	margin: 3px 20px 0px 0px;
+}
