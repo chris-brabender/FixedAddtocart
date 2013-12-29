@@ -6,7 +6,7 @@ This is a basic extension for Magento that creates a bar across the top of produ
 This extension utilises the jQuery Waypoints library v2.0.3.
 
 ### jQuery Waypoints:
-GitHub - https://github.com/imakewebthings/jquery-waypoints
+GitHub - https://github.com/imakewebthings/jquery-waypoints  
 Home - http://imakewebthings.com/jquery-waypoints/
 
 
@@ -29,6 +29,8 @@ If you get a 404 trying to view any pages just log out of admin and back in.
 ### Configuration
 
 The extension can be enabled / disabled for individual store views in System Configuration > Brabs Config > Fixed Add to Cart Settings
+
+---
 
 ## Bugs / Enhancements
 
